@@ -1,3 +1,5 @@
+#!/usr/local/bin/python
+# coding: utf-8
 # module to manage art4apps resources
 
 import json
@@ -15,7 +17,9 @@ class Art4Apps:
         self._categories_words = None
         self._languages = None
         self._translations = {}
-
+        self._language_names = {'en': 'English',
+                                'fr': 'Français',
+                                'es': 'Español'}
     def _init_words(self):
         if self._words is None:
             if os.path.exists('./data/words.json'):
@@ -38,7 +42,7 @@ class Art4Apps:
 
     def _init_languages(self):
         if self._languages is None:
-            self._languages = []
+            self._languages = ['en']
             data_path_list = ['./data/', DATA_PATH]
             for data_path in data_path_list:
                 for file_name in os.listdir(DATA_PATH):
@@ -72,6 +76,12 @@ class Art4Apps:
         audio_file_path = os.path.join(AUDIO_PATH, language, "%s.ogg" % word)
         if os.path.exists(audio_file_path):
             return audio_file_path
+        else:
+            return None
+
+    def get_language_name(self, language_code):
+        if language_code in self._language_names:
+            return self._language_names[language_code]
         else:
             return None
 
