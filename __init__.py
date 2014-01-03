@@ -52,6 +52,8 @@ class Art4Apps:
                             self._languages.append(language)
 
     def _init_translation_language(self, language):
+        if language == 'en':
+            return
         if language not in self.get_languages():
             raise Exception('language no available')
         if language not in self._translations:
