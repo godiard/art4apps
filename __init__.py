@@ -63,8 +63,11 @@ class Art4Apps:
                 json_path = os.path.join(DATA_PATH,
                                          'words_%s.json' % language)
 
-            with open(json_path) as json_file:
-                self._translations[language] = json.load(json_file)
+            if os.path.exists(json_path):
+                with open(json_path) as json_file:
+                    self._translations[language] = json.load(json_file)
+            else:
+                self._translations[language] = {}
 
     def get_image_filename(self, word):
         self._init_words()
