@@ -30,8 +30,6 @@ class Art4AppsTranslator:
 
         self.window.set_title("Art4Apps Translator")
 
-        self.window.set_size_request(400, 400)
-
         self.window.connect("delete_event", self.delete_event)
 
         self.hbox = Gtk.HBox()
@@ -77,6 +75,8 @@ class Art4AppsTranslator:
 
         self.treeview.set_search_column(0)
         self.word_column.set_sort_column_id(0)
+        self.scrolledwindow.set_size_request(300, 400)
+        self.entry.set_size_request(300, -1)
 
         self.window.show_all()
 
@@ -147,7 +147,7 @@ class Art4AppsTranslator:
         if self._new_translations:
 
             translations = {}
-            
+
             for word in sorted(self.aa.get_words()):
                 translation = self.aa.get_translation(word, self._language)
                 if translation is not None:
