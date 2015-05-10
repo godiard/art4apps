@@ -81,6 +81,9 @@ class Art4AppsTranslator:
         self.window.show_all()
 
         self.treeview.connect('cursor-changed', self._word_selected)
+        # show the initial image
+        self._word_selected(self.treeview)
+
 
     def _change_word_list(self, checkbutton):
         self._load_words(checkbutton.get_active())
@@ -116,6 +119,7 @@ class Art4AppsTranslator:
     def _word_selected(self, treeview):
         selection = treeview.get_selection()
         if selection is None:
+            self.image.clear()
             return
         treestore, posi = selection.get_selected()
         if posi is not None:
@@ -123,6 +127,8 @@ class Art4AppsTranslator:
             image_filename = self.aa.get_image_filename(word)
             if image_filename:
                 self.image.set_from_file(image_filename)
+            else:
+                self.image.clear()
             self.entry.set_text(treestore.get_value(posi, 1))
 
     def __activate_cb(self, entry):
