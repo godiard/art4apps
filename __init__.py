@@ -19,7 +19,8 @@ class Art4Apps:
         self._translations = {}
         self._language_names = {'en': 'English',
                                 'fr': 'Français',
-                                'es': 'Español'}
+                                'es': 'Español',
+                                'ht': 'Haitian'}
     def _init_words(self):
         if self._words is None:
             if os.path.exists('./data/words.json'):
