@@ -2,12 +2,12 @@
 
 Summary: Art4Apps images and data to use it
 Name:    art4apps
-Version: 0.3
+Version: 0.3.1
 Release: 0
 URL:     http://www.art4apps.org
 License: Creative cCommnn License (CC-BY-SA)
 Group:   User Interface/Desktops
-Source0: art4apps-0.3.tar
+Source0: art4apps-0.3.1.tar
 
 BuildRequires: python
 Requires: art4apps-images
