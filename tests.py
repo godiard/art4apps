@@ -1,4 +1,4 @@
-from __init__ import Art4Apps
+from art4apps import Art4Apps
 
 aa = Art4Apps()
 
