@@ -55,7 +55,7 @@ mkdir -p %{buildroot}/%{_bindir}
 
 cp %{_builddir}/%{name}-%{version}/data/* %{buildroot}/%{_datadir}/%{name}/data
 cp %{_builddir}/%{name}-%{version}/images/* %{buildroot}/%{_datadir}/%{name}/images
-cp %{_builddir}/%{name}-%{version}/__init__.py %{buildroot}/%{python_sitelib}/%{name}
+cp %{_builddir}/%{name}-%{version}/art4apps/__init__.py %{buildroot}/%{python_sitelib}/%{name}
 cp %{_builddir}/%{name}-%{version}/audio/en/* %{buildroot}/%{_datadir}/%{name}/audio/en/
 cp %{_builddir}/%{name}-%{version}/audio/fr/* %{buildroot}/%{_datadir}/%{name}/audio/fr/
 cp %{_builddir}/%{name}-%{version}/audio/es/* %{buildroot}/%{_datadir}/%{name}/audio/es/
