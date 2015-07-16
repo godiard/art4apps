@@ -1,0 +1,78 @@
+Source: art4apps
+Section: Libraries
+Priority: optional
+Maintainer: Gonzalo Odiard <godiard@gmail.com>
+Standards-Version: 3.9.4
+Homepage: https://github.com/godiard/art4apps
+#Vcs-Git: git://git.debian.org/collab-maint/seek-bzip2.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/seek-bzip2.git;a=summary
+Build-Depends: debhelper (>= 8.0.0), python-support, python-all-dev, python-setuptools
+XS-Python-Version: >=2.7
+
+Package: art4apps
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Art4Apps images and data to use it
+ Art4Apps is a database of images, audio,and videos files of words created 
+ by ET4D under a Creative Common License (CC BY-SA). 
+ We hope to help developers and educators create applications for educational
+ uses at a low cost through the use of our resources. The primary objective
+ in sharing this database is to promote apps development in the field of
+ literacy in an effort to support and sustain the diversity among
+ world  languages.
+
+Package: art4apps-images
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Art4Apps images and data to use it
+ Art4Apps is a database of images, audio,and videos files of words created 
+ by ET4D under a Creative Common License (CC BY-SA). 
+ We hope to help developers and educators create applications for educational
+ uses at a low cost through the use of our resources. The primary objective
+ in sharing this database is to promote apps development in the field of
+ literacy in an effort to support and sustain the diversity among
+ world  languages.
+ .
+ Images for the Art4apps project
+
+Package: art4apps-audio-en
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Art4Apps images and data to use it
+ Art4Apps is a database of images, audio,and videos files of words created 
+ by ET4D under a Creative Common License (CC BY-SA). 
+ We hope to help developers and educators create applications for educational
+ uses at a low cost through the use of our resources. The primary objective
+ in sharing this database is to promote apps development in the field of
+ literacy in an effort to support and sustain the diversity among
+ world  languages.
+ .
+ Audio for English words for the Art4apps project
+ 
+Package: art4apps-audio-fr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Art4Apps images and data to use it
+ Art4Apps is a database of images, audio,and videos files of words created 
+ by ET4D under a Creative Common License (CC BY-SA). 
+ We hope to help developers and educators create applications for educational
+ uses at a low cost through the use of our resources. The primary objective
+ in sharing this database is to promote apps development in the field of
+ literacy in an effort to support and sustain the diversity among
+ world  languages.
+ .
+ Audio for French words for the Art4apps project
+
+Package: art4apps-audio-es
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Art4Apps images and data to use it
+ Art4Apps is a database of images, audio,and videos files of words created 
+ by ET4D under a Creative Common License (CC BY-SA). 
+ We hope to help developers and educators create applications for educational
+ uses at a low cost through the use of our resources. The primary objective
+ in sharing this database is to promote apps development in the field of
+ literacy in an effort to support and sustain the diversity among
+ world  languages.
+ .
+ Audio for Spanish words for the Art4apps project
