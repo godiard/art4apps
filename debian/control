@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 8.0.0), python-support, python-all-dev, python-setu
 XS-Python-Version: >=2.7
 
 Package: art4apps
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Art4Apps images and data to use it
  Art4Apps is a database of images, audio,and videos files of words created 
@@ -20,10 +20,12 @@ Description: Art4Apps images and data to use it
  in sharing this database is to promote apps development in the field of
  literacy in an effort to support and sustain the diversity among
  world  languages.
+ .
+ Python library to access the images and audio files.
 
 Package: art4apps-images
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: ${misc:Depends}
 Description: Art4Apps images and data to use it
  Art4Apps is a database of images, audio,and videos files of words created 
  by ET4D under a Creative Common License (CC BY-SA). 
@@ -36,8 +38,8 @@ Description: Art4Apps images and data to use it
  Images for the Art4apps project
 
 Package: art4apps-audio-en
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: ${misc:Depends}
 Description: Art4Apps images and data to use it
  Art4Apps is a database of images, audio,and videos files of words created 
  by ET4D under a Creative Common License (CC BY-SA). 
@@ -50,8 +52,8 @@ Description: Art4Apps images and data to use it
  Audio for English words for the Art4apps project
  
 Package: art4apps-audio-fr
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: ${misc:Depends}
 Description: Art4Apps images and data to use it
  Art4Apps is a database of images, audio,and videos files of words created 
  by ET4D under a Creative Common License (CC BY-SA). 
@@ -64,8 +66,8 @@ Description: Art4Apps images and data to use it
  Audio for French words for the Art4apps project
 
 Package: art4apps-audio-es
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: ${misc:Depends}
 Description: Art4Apps images and data to use it
  Art4Apps is a database of images, audio,and videos files of words created 
  by ET4D under a Creative Common License (CC BY-SA). 

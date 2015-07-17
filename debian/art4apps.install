@@ -1,1 +1,3 @@
+art4apps/__init__.py usr/lib/python2.7/dist-packages/art4apps
 data/* usr/share/art4apps/data
+art4apps-translator.py usr/bin

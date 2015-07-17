@@ -4,8 +4,6 @@
 
 import json
 import os
-import pkg_resources
-pkg_resources.declare_namespace("art4apps")
 
 DATA_PATH = '/usr/share/art4apps/data/'
 IMAGES_PATH = '/usr/share/art4apps/images/'

@@ -11,7 +11,7 @@ setup(
     name="art4apps",
     version= "0.3.2",
     packages=["art4apps"],
-    namespace_packages=['art4apps'],
+    scripts=['art4apps-translator.py'],
     include_package_data = True,
     zip_safe = False,
     url = "http://www.art4apps.org/",
